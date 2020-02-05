@@ -1,17 +1,3 @@
-// create div for each customer and give same class for css purposes
-
-// 12 customers
-// all styled the same
-// 4 per row
-// *********************************************************
-
-// const name = document.querySelector('.name')
-// const email = document.querySelector('.email')
-// const address = document.querySelector('.location')
-// const dob = document.querySelector('.dob')
-// const dateRegistered = document.querySelector('.registered')
-// const image = document.querySelector('.picture')
-
 const row = document.querySelector(".row")
 
 for(let customer of customers) {
@@ -57,35 +43,6 @@ for(let customer of customers) {
 }
 
 
-
-
-
-// function createCustomerInfo (customers) {
-//   const customerListItem = document.createElement('li')
-//   li.textContent = name
-//   return li
-
-
-//     return listItem
-// }
-
-// const ul = document.createElement('ul')
-// for (const li of customerListItem) {
-//   ul.appendChild(li)
-// }
-
-// // function showCustomers () {
-
-// // }
-
-// const customerNames = customers.map(function (customer) {
-//   return customer.name.first[0].topUpperCase() +
-//     customer.name.first.slice(1)
-//   ' ' +
-//     customer.name.last[0].toUpperCase() +
-//     customer.name.last.slice(1)
-// })
-
 function capitalizeFirstLetter (string) {
   return string[0].toUpperCase() + string.slice(1)
 
@@ -116,3 +73,36 @@ function nameToAbbr (stateName) {
   
     return usStates[idx].abbreviation
   }
+
+
+
+
+
+
+  
+// function createCustomerInfo (customers) {
+//   const customerListItem = document.createElement('li')
+//   li.textContent = name
+//   return li
+
+
+//     return listItem
+// }
+
+// const ul = document.createElement('ul')
+// for (const li of customerListItem) {
+//   ul.appendChild(li)
+// }
+
+// // function showCustomers () {
+
+// // }
+
+// const customerNames = customers.map(function (customer) {
+//   return customer.name.first[0].topUpperCase() +
+//     customer.name.first.slice(1)
+//   ' ' +
+//     customer.name.last[0].toUpperCase() +
+//     customer.name.last.slice(1)
+// })
+
