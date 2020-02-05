@@ -46,12 +46,12 @@ for(let customer of customers) {
 
     let dob = document.createElement("p")
     dob.classList.add("dob")
-    dob.innerHTML = customer.dob
+    dob.innerHTML = `DOB: ${moment(customer.dob).format('MMM Do, YYYY')}`
     box.appendChild(dob)
 
     let dateRegistered = document.createElement("p")
     dateRegistered.classList.add("registered")
-    dateRegistered.innerHTML = customer.registered
+    dateRegistered.innerHTML = `Customer Since: ${moment(customer.registered).format('MMM Do, YYYY')}`
     box.appendChild(dateRegistered)
 
 }
