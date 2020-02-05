@@ -36,12 +36,12 @@ for(let customer of customers) {
 
     let street = document.createElement("p")
     street.classList.add("location")
-    street.innerHTML =customer.location.street.toUpperCase()
+    street.innerHTML =customer.location.street
     box.appendChild(street)
 
     let address = document.createElement("p")
     address.classList.add("location")
-    address.innerHTML = customer.location.city.toUpperCase() + ", " + nameToAbbr(customer.location.state) + " " + customer.location.postcode
+    address.innerHTML = customer.location.city + ", " + nameToAbbr(customer.location.state) + " " + customer.location.postcode
     box.appendChild(address)
 
     let dob = document.createElement("p")
