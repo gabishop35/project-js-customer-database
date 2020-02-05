@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-header {
+h1 {
     font-family: sans-serif;
     font-size: 36px;
     font-weight: bold;
@@ -12,26 +12,61 @@ header {
     padding: 1rem;
 }
 
-body {
+.row {
     flex-wrap: wrap;
+    display: flex;
+}
+
+box {
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
     width: 100%;
+    border-radius: 200px;
 }
 
-.customer {
+.cust {
     width: 20%;
+    margin: 1rem;
+    text-align: center
 }
 
-.info {
+/* .info {
     justify-content: center;
     align-items: center;
     display: flex;
     margin-left: 1rem;
+} */
+
+.name {
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.photo {
-    border-radius: 75px;
-    margin-left: 1rem;
+.email {
+    font-size: 16px;
 }
+
+.street {
+    font-size: 20px
+}
+
+.address {
+    font-size: 20px
+}
+
+.dob {
+    font-size: 20px
+}
+
+.registered{
+    font-size: 20px
+}
+
